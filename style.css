@@ -8,11 +8,7 @@
     background: linear-gradient(180deg, hsla(154, 53%, 82%, 1) 0%, hsla(24, 88%, 65%, 1) 50%, hsla(216, 56%, 16%, 1) 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
  }
- h1{
-    color: white;
-    position: absolute;
-    margin-bottom: 850px;
- }
+ 
  #gameContainer{
     text-align: center;
     display: flex;
@@ -55,10 +51,7 @@
  }
 
  @media (max-width: 600px) {
-    h1{
-        margin-bottom: 750px;
-        font-size: 1.2rem;
-    }
+   
 
     #gameCanvas {
         width: 80vw; 
@@ -88,10 +81,7 @@
 
 
 @media (min-width: 601px) {
-    h1{
-        margin-bottom: 650px;
-        font-size: 1.5rem;
-    }
+   
     #gameCanvas {
         width: 400px;
         height: 400px;
