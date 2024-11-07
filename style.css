@@ -7,6 +7,7 @@
     min-height: 100vh;
     background: linear-gradient(180deg, hsla(154, 53%, 82%, 1) 0%, hsla(24, 88%, 65%, 1) 50%, hsla(216, 56%, 16%, 1) 100%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow: hidden;
  }
  
  #gameContainer{
