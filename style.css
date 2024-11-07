@@ -15,8 +15,15 @@
  }
  #gameContainer{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
  }
  #gameCanvas{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
     background-color:hsla(210, 81%, 22%, 1);
     border: 2px solid #151e06;
     border-radius: 25px;
@@ -26,13 +33,16 @@
     color: white;
  }
  #controls{
+    display: flex;
+    align-items: center;
     margin-top: 10px;
+    gap: 5px;
+    margin-right: 10px;
  }
  #directionButtons{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     gap: 15px;
-    margin-top: 15px;
  }
  button{
     padding: 10px;
@@ -43,3 +53,57 @@
     border-radius: 25px;
     color: white;
  }
+
+ @media (max-width: 600px) {
+    h1{
+        margin-bottom: 850px;
+        font-size: 1.2rem;
+    }
+
+    #gameCanvas {
+        width: 80vw; /* Scale canvas down */
+        height: auto;
+    }
+
+    #scoreBoard p {
+        font-size: 0.9rem;
+    }
+
+    #directionButtons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      
+    }
+    #controls{
+        flex-direction: column;
+    }
+
+
+    #controls button {
+        font-size: 0.8rem;
+        padding: 6px;
+        margin: 10px 0;
+    }
+}
+
+
+@media (min-width: 601px) {
+    h1{
+        margin-bottom: 850px;
+        font-size: 1.5rem;
+    }
+    #gameCanvas {
+        width: 400px;
+        height: 400px;
+    }
+
+    #scoreBoard p {
+        font-size: 1.2rem;
+    }
+
+    #controls button {
+        font-size: 1rem;
+        padding: 8px;
+        margin: 10px 0;
+    }
+}

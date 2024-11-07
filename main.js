@@ -4,6 +4,16 @@ const canvas = document.getElementById('gameCanvas');
 const ctx = canvas.getContext('2d');
 const boxSize = 20;
 
+function resizeCanvas() {
+    const canvasSize = Math.min(window.innerWidth * 0.8, 400); // Set a max limit for the canvas size
+    canvas.width = canvasSize;
+    canvas.height = canvasSize;
+}
+
+
+window.addEventListener('resize', resizeCanvas);
+resizeCanvas(); 
+
 let snake = [{x: 200, y:200}];
 let food = {x:0, y:0};
 let score = 0;
