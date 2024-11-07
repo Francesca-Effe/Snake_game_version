@@ -11,23 +11,23 @@
 <body>
     <h1>The Waterdrop Game</h1>
 
-    <div class="game-container">
-        <div class="game-board" id="gameBoard"></div>
-        <div class="scoreboard">
+    <div id="game-container">
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+        <p id="gameOverMessage" style="display: none; color: red; font-weight: bold;">Game Over</p>
+        <div id="scoreBoard">
             <p>Score: <span id="score">0</span></p>
-            <p>High Score: <span id="highScore">0</span></p>
+            <p>high Score: <span id="highScore">0</span></p>
         </div>
-        <div class="controls">
-            <button id="pauseBtn">Pause</button>
-            <button id="restartBtn">Restart</button>
-            <button id="newGameBtn">New Game</button>
-        </div>
-
         <div id="controls">
-            <button id="upBtn">Up</button>
-            <button id="leftBtn">Left</button>
-            <button id="rightBtn">Right</button>
-            <button id="downBtn">Down</button>
+            <button id="startButton">Start</button>
+            <button id="pauseButton">Pause</button>
+            <button id="newGameButton">New Game</button>
+            <div id="directionButtons">
+                <button id="upButton">Up</button>
+                <button id="leftButton">Left</button>
+                <button id="downButton">Down</button>
+                <button id="rightButton">Right</button>
+            </div>
         </div>
         
     </div>
